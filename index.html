@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>펀드 웹 페이지</title>
+    <link rel="stylesheet" href="/jquery-ui-1.11.4/themes/start/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="sectionWrap">
+        <section id="header">
+            <div id="header-top">
+            </div>
+            <div id="header-bottom-wrap">
+                <div id="header-bottom">
+                    <ul id="nav-wrap">
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a active">Home</p>
+                        </li>
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a">View</p>
+                        </li>
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a">AddFund</p>
+                        </li>
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a">investorList</p>
+                        </li>
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a">login</p>
+                        </li>
+                        <li class="nav-lists">
+                            <div class="colorbar"></div>
+                            <p class="nav-lists-a">Sign up</p>
+                        </li>
+                    </ul>
+                    <div id="logo">kickstarter</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="home" class="Home fundBox activity">
+            <div id="homeimgWrap">
+                <div id="dark"></div>
+                <div id="homeimgText">Welcome To <span>KickStarter!</span><br>
+                    <p id="subText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                    <button id="homeDBtn" onclick="gotoAddFund()"> Go to add Fund.</button>
+                </div>
+            </div>
+            <div id="contents">
+                <div id="rankTitle">
+                    <br>ㅡ Rank ㅡ<br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Ipsum aliquid exercitationem accusantium ullam excepturi nostrum vero quaerat ex dolores!
+                    </p>
+                </div>
+
+                <div id="rankWrap">
+                    <div id="rankFund0" class="listWrapper">
+                        <div class="graph">
+                            <div class="graph-bar"></div>
+                        </div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="fund-image"><span class="text-sz1-b rankText">마감: 2019-12-31 00:00</span></div>
+                        <div class="flex-container">
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">현재금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집율</div>
+                            </div>
+                        </div>
+                        <div class="pull-left text-sz2">투자자수: 5명</div>
+                        <div class="pull-right text-sz2">D-10</div>
+                    </div>
+                    <div id="rankFund1" class="listWrapper">
+                        <div class="graph">
+                            <div class="graph-bar"></div>
+                        </div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="fund-image"><span class="text-sz1-b rankText">마감: 2019-12-31 00:00</span></div>
+                        <div class="flex-container">
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">현재금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집율</div>
+                            </div>
+                        </div>
+                        <div class="pull-left text-sz2">투자자수: 5명</div>
+                        <div class="pull-right text-sz2">D-10</div>
+                    </div>
+                    <div id="rankFund2" class="listWrapper">
+                        <div class="graph">
+                            <div class="graph-bar"></div>
+                        </div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="fund-image"><span class="text-sz1-b rankText">마감: 2019-12-31 00:00</span></div>
+                        <div class="flex-container">
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">현재금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집율</div>
+                            </div>
+                        </div>
+                        <div class="pull-left text-sz2">투자자수: 5명</div>
+                        <div class="pull-right text-sz2">D-10</div>
+                    </div>
+                    <div id="rankFund3" class="listWrapper">
+                        <div class="graph">
+                            <div class="graph-bar"></div>
+                        </div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="form-control1 text-sz1-b rankText"></div>
+                        <div class="fund-image"><span class="text-sz1-b rankText">마감: 2019-12-31 00:00</span></div>
+                        <div class="flex-container">
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">현재금액</div>
+                            </div>
+                            <div class="flex-item text-sz2">
+                                <div class="rankText">모집율</div>
+                            </div>
+                        </div>
+                        <div class="pull-left text-sz2">투자자수: 5명</div>
+                        <div class="pull-right text-sz2">D-10</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="view" class="View fundBox">
+            <div id="viewFImgWrap">
+                <div id="dark2"></div>
+                <div id="homeimgText">Look at a Fund List.</span><br>
+                    <p id="subText">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>
+                    </p>
+                </div>
+            </div>
+            <h1 class="sub-title subtitle-img1"></h1>
+            <div class="fundList1">
+            </div>
+            <div class="pagination">
+                <div>＜</div>
+                <div>1</div>
+                <div>＞</div>
+            </div>
+        </section>
+
+        <section id="addFund" class="AddFund fundBox">
+            <div id="AddFImgWrap">
+                <div id="dark2"></div>
+                <div id="homeimgText">Add your Fund.</span><br>
+                    <p id="subText">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>
+                    </p>
+                </div>
+            </div>
+            <h1 class="sub-title subtitle-img2"></h1>
+            <div class="regDiv1st">
+                <img style="width: 100%;
+                height: 380px;
+                border: 1px solid #ccc;
+                border-radius: 5px;"><br>
+                <input type="file" name="fundImage" id="fundImage" style="display: none">
+                <button style="width: 100%; float: left; margin-top: -3px;" id="addFundButton"
+                    onclick="selectFundImage()">펀드 이미지
+                    선택</button>
+            </div>
+            <div class="regDiv2nd">
+                <div class="regFundBox">
+                    <div class="form-group">
+                        <label for="impNumber">펀드번호</label>
+                        <input class="form-control" id="impNumber" type="text" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label for="impName">창업펀드명</label>
+                        <input class="form-control" id="impName" type="text" value="" placeholder="창업편드명" />
+                    </div>
+                    <div class="form-group">
+                        <label for="impDate">모집마감일</label>
+                        <input class="form-control" id="impDate" type="datetime-local" step="1" value=""
+                            placeholder="모집마감일" />
+                    </div>
+                    <div class="form-group">
+                        <label for="impMoney">모집금액</label>
+                        <input class="form-control" id="impMoney" type="number" value="" placeholder="모집금액" />
+                    </div>
+                    <input class="form-control" id="nowMoney" value="0" />
+                </div>
+            </div>
+            <div style="display: block; text-align: center">
+                <button class="btn btn-large" id="addFundButton">추가하기</button>
+            </div>
+        </section>
+
+        <section id="investors" class="investorList fundBox">
+            <div id="InvestImgWrap">
+                <div id="dark2"></div>
+                <div id="homeimgText">Look at a list of investments.</span><br>
+                    <p id="subText">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>
+                        Nostrum, nulla laudantium ullam aliquam quis sapiente atque exercitationem?
+                    </p>
+                </div>
+            </div>
+            <h1 class="sub-title subtitle-img3"></h1>
+            <div class="investorList">
+                <table style="border: 1px solid #ccc; width: 100%">
+                    <thead>
+                        <tr>
+                            <th width="100px">펀드번호</th>
+                            <th width="40%">창업펀드명</th>
+                            <th width="130px">투자자명</th>
+                            <th width="100px">투자금액</th>
+                            <th width="250px">펀드지분</th>
+                            <th width="100px">펀드계약서</th>
+                        </tr>
+                    </thead>
+                    <tbody id="investorInfos">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+            Tel) 031-778-2300<br>
+            우) 13587 경기 성남시 분당구 불정로386번길 35 양영디지털고등학교<br>
+            Copyright Gondr Allright reserved. Since 2017-03-01
+        </footer>
+    </div>
+</body>
+<script src="/jquery-1.12.3.min.js"></script>
+<script src="/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="/script.js"></script>
+
+</html>
